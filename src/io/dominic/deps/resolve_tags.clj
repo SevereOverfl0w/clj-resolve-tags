@@ -1,4 +1,4 @@
-(ns resolve-tags
+(ns io.dominic.deps.resolve-tags
   (:require
     [rewrite-clj.parser :refer [parse-file]]
     [io.dominic.ednup.core :as ednup]
