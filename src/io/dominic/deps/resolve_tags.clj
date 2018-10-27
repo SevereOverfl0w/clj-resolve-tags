@@ -36,7 +36,8 @@
 
 (defn -main
   [& [deps-file]]
-  (spit deps-file (process-deps-file)))
+  (let [deps-file (or deps-file "deps.edn")]
+    (spit deps-file (process-deps-file deps-file))))
 
 (comment
   (process-deps-file "not-deps.edn"))
