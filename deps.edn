@@ -1,5 +1,5 @@
 {:paths ["src"]
  :deps {io.dominic/ednup {:git/url "https://github.com/SevereOverfl0w/ednup.git"
-                          :sha "cc3c8450910fc8ef4930fbf6f6194a98330f144f"}
+                          :sha "87b2734303d815e6209495b9c6a6ee77aa17ab4b"}
         org.clojure/tools.gitlibs {:mvn/version "0.2.64"}}}
    
