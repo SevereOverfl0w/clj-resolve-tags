@@ -1,0 +1,4 @@
+{:paths ["src"]
+ :deps {io.dominic/ednup {:local/root "../ednup"}
+        org.clojure/tools.gitlibs {:mvn/version "0.2.64"}}}
+   

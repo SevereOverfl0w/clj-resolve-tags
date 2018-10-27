@@ -1,0 +1,12 @@
+{:paths ["src"]
+ ;; cool comment
+ :deps
+ {potemkin {:mvn/version "0.1"}
+  tools.deps.alpha {:git/url "https://github.com/clojure/tools.deps.alpha.git"
+                    ;; totally rad
+                    :tag "tools.deps.alpha-0.5.460"}
+  ;; woah dude
+  tools.deps.alphax {:git/url "https://github.com/clojure/tools.deps.alpha.git"
+                     :tag "tools.deps.alpha-0.5.460"
+                     ;; zoom
+                     :sha nil}}}
