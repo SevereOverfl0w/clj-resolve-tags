@@ -8,7 +8,7 @@ Works best if you've added a placeholder `:sha nil` to your deps.edn file.
 
 [source,bash]
 ----
-clojure -Sdeps '{:deps {io.dominic.deps/resolve-tags {:git/url "https://github.com/SevereOverfl0w/clj-resolve-tags.git" :sha "cd17c5267e0ddd9baec3dcb81936c791dbdbc814"}}}' -m io.dominic.deps.resolve-tags
+clojure -Sdeps '{:deps {io.dominic.deps/resolve-tags {:git/url "https://github.com/SevereOverfl0w/clj-resolve-tags.git" :sha "40914891aee90192a06d21099a0ad165aad4b256"}}}' -m io.dominic.deps.resolve-tags
 ----
 
 Run in the same directory as your deps.edn file.
