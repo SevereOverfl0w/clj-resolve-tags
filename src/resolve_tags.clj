@@ -26,14 +26,17 @@
              deps
              (keys deps)))))
 
+(defn- process-deps-file
+  [deps-file]
+  (let [counter (atom 0)]
+    (ednup/nm-string
+      (resolve-git-deps
+        counter
+        (ednup/->NodeMap (parse-file deps-file))))))
+
 (defn -main
   [& [deps-file]]
-  (let [counter (atom 0)]
-    (spit deps-file
-          (ednup/nm-string
-            (resolve-git-deps
-              counter
-              (ednup/->NodeMap (parse-file deps-file)))))))
+  (spit deps-file (process-deps-file)))
 
 (comment
-  (-main "not-deps.edn"))
+  (process-deps-file "not-deps.edn"))
